@@ -70,7 +70,7 @@ We determine LTV by:
 
 ## 🌐 Demo
 
-🔗 [Live Demo](https://your-demo-link.com)
+🔗 [Live Demo](https://cardfi.vercel.app/)
 
 ---
 
