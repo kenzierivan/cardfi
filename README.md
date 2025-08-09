@@ -1,30 +1,78 @@
 # CardFi
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+CardFi is a Web3-powered platform that unlocks liquidity from your trading cards by tokenizing them as NFTs and enabling collateralized lending.  
+Built on the Solana blockchain for low fees and high transaction speed.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/kenzierivans-projects/v0-solana-blockchain-demo)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/L5AS9UeZm5X)
+---
 
-## Overview
+## 🚀 Features
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+- **NFT Tokenization of Graded Cards** — Mint NFTs backed by real, graded trading cards.
+- **Collateralized Loans** — Borrow stablecoins using your NFT as collateral.
+- **Peer-to-Peer Lending** — Fund loans from other users in exchange for interest.
+- **Automated Loan Liquidation** — If loans default, NFTs are auctioned on the marketplace automatically.
+- **Low Fees, High Speed** — Powered by Solana for a smooth DeFi experience.
 
-## Deployment
+---
 
-Your project is live at:
+## 🛠 How It Works
 
-**[https://vercel.com/kenzierivans-projects/v0-solana-blockchain-demo](https://vercel.com/kenzierivans-projects/v0-solana-blockchain-demo)**
+1. **Connect Your Wallet**  
+   Connect your Solana wallet to the CardFi platform.
 
-## Build your app
+2. **Submit Your Card**  
+   Provide details of your graded trading card (PSA, BGS, CGC, etc.).  
+   Physical verification ensures authenticity before minting.
 
-Continue building your app on:
+3. **Mint Your NFT**  
+   Once verified, an NFT is minted representing your card on the blockchain.
 
-**[https://v0.dev/chat/projects/L5AS9UeZm5X](https://v0.dev/chat/projects/L5AS9UeZm5X)**
+4. **Get a Loan**  
+   Use your NFT as collateral to request a stablecoin loan.  
+   Loan-to-Value (LTV) ratio is based on historical lows of the card’s market price.
 
-## How It Works
+5. **Repay or Default**  
+   - If repaid, NFT ownership returns to the borrower.  
+   - If defaulted, the NFT is automatically auctioned to the highest bidder.
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+6. **Peer-to-Peer Lending**  
+   Fund loan requests and earn interest, with repayment automated via smart contracts.
+
+---
+
+## 💡 Why Web3?
+
+Unlike Web2 lending platforms, CardFi:
+- Uses **NFTs** to enable true on-chain ownership and transferability.
+- Enables **smart contract automation** for loan execution and liquidation.
+- Supports **future interoperability** with other NFT lending platforms.
+
+---
+
+## 📦 Tech Stack
+
+- **Frontend:** React / Next.js  
+- **Blockchain:** Solana + Anchor  
+- **Backend:** Node.js + Express  
+- **Database:** PostgreSQL  
+- **Smart Contracts:** Rust (Solana Programs)
+
+---
+
+## 🏦 Loan-to-Value (LTV) Policy
+
+We determine LTV by:
+- Web scraping market data from sources like PriceCharting and TCGPlayer.
+- Using **historical low prices** to calculate the maximum borrowing limit.  
+  Example: If a card’s current price is $100 but its historical low is $40, LTV is capped at 40% ($40 loan cap).
+
+---
+
+## 🌐 Demo
+
+🔗 [Live Demo](https://your-demo-link.com)
+
+---
+
+## 📩 Contact
+🐦 **X:** [@CardFiOfficial](https://x.com/cardfi_)
